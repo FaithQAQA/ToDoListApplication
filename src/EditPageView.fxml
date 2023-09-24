@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="CENTER" hgap="20.0" prefHeight="214.0" prefWidth="421.0" vgap="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EditPageController">
+  
+    <children>
+        <Label text="Task:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="Task" GridPane.columnIndex="1" GridPane.rowIndex="0" prefWidth="100"/>
+        <Label text="Due Date:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField fx:id="dueDate" GridPane.columnIndex="1" GridPane.rowIndex="1" prefWidth="100"/>
+        <Label text="Priority:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <ComboBox fx:id="priorityComboBox" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Button fx:id="saveButton" onAction="#handleSaveButton" text="Save" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Button fx:id="remove" onAction="#handleRemoveButton" text="Remove Task" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    </children>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
